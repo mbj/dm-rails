@@ -4,7 +4,7 @@ require 'active_support/concern'
 require 'active_model'
 
 module ActiveModel
-  module MassAssignmentSecurity
+  class MassAssignmentSecurity
     # Provides a patched version of the Sanitizer used in Rails to handle property
     # and relationship objects as keys. There is no way to inject a custom sanitizer
     # without reimplementing the permission sets.
